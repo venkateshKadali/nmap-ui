@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-Mapper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body id="body">
+    
+    <div class="container">
+        <div class="input_section" id="user-i">
+            <input type="text" id="hostname" class="host">
+            <button id="findInfo" onclick="clickSubmit()"><i class="fas fa-angle-right"></i></button>
+        </div>
+    </div>
+    <div  id="loader_container"></div>
+    <div class="result">
+        <h4>Open Ports</h4>
+        <div class="open_ports spacer" id="open_port"> 
+        </div>  
+
+        <h4>History Ports</h4>
+        <div class="history_ports spacer" id="history_port">
+        </div>  
+
+        <h4>Newly Added Ports</h4>
+        <div class="newly_added_ports spacer" id = "new_port">
+        </div>  
+
+        <h4>Deleted Ports</h4>
+        <div class="deleted_ports spacer" id = "deleted_port">
+        </div>  
+    </div>
+</body>
+</html>
